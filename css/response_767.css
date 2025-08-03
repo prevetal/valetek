@@ -1,0 +1,879 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 20px;
+        --font_size_title: 28px;
+        --font_size_title_big: 34px;
+        --offset: 60px;
+    }
+
+
+
+    /*--------------
+        ButtonUp
+    --------------*/
+    .buttonUp
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 30px;
+    }
+
+
+    .all_link a
+    {
+        width: 100%;
+        padding: 16px var(--cont_padding_double);
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head .title
+    {
+        width: calc(100% - 50px);
+
+        font-size: 16px;
+    }
+
+
+    .accordion_item .head .icon
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .accordion_item .head .icon svg
+    {
+        width: 20px;
+        height: 19px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 0 var(--cont_padding) var(--cont_padding);
+    }
+
+
+    .accordion_item .text_block
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .accordion_item.active
+    {
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .10);
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .logo img
+    {
+        width: 200px;
+        height: 58px;
+    }
+
+
+    .mob_header .contacts
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs .sep
+    {
+        margin-inline: 4px;
+    }
+
+
+    .page_title
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *,
+    .form .columns > *.width1of3,
+    .form .columns > *.width2of3
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .label
+    {
+        font-size: 13px;
+    }
+
+
+    .form .input,
+    .form .nice-select .current
+    {
+        height: 52px;
+    }
+
+
+    .form .submit
+    {
+        gap: var(--cont_padding_half);
+    }
+
+
+    .form .submit_btn
+    {
+        width: 100%;
+        padding: 16px var(--cont_padding_double);
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .text_block h3
+    {
+        font-size: 22px;
+    }
+
+
+    .text_block .images
+    {
+        flex-wrap: wrap;
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .text_block .images img
+    {
+        width: 100%;
+    }
+
+
+    .text_block .table_wrap
+    {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+
+    .text_block table
+    {
+        min-width: 680px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .swiper-button-next,
+    .main_slider .swiper-button-prev
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .main_slider .swiper-button-next .icon,
+    .main_slider .swiper-button-prev .icon
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+    /*-----------------
+        Main pluses
+    -----------------*/
+    .main_pluses .item
+    {
+        min-height: 100px;
+        padding-block: var(--cont_padding_half);
+        padding-inline: 16px var(--cont_padding_half);
+    }
+
+
+    .main_pluses .item:before
+    {
+        font-size: 72px;
+    }
+
+
+    .main_pluses .item .icon
+    {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .row
+    {
+        margin-left: 0;
+    }
+
+
+    .catalog .row > *,
+    .catalog .row > *.big
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .catalog .category
+    {
+        height: 180px;
+    }
+
+
+    .catalog .category:before
+    {
+        right: -48px;
+
+        width: 280px;
+        height: 280px;
+    }
+
+
+    .catalog .category .link
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+
+
+    /*---------------------
+        Main advantages
+    ---------------------*/
+    .main_advantages .grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .main_advantages .item.big_h
+    {
+        height: 200px;
+
+        grid-row: auto;
+        grid-column: span 2 / span 2;
+    }
+
+
+    .main_advantages .item .icon,
+    .main_advantages .item.big_h .icon
+    {
+        height: 52px;
+    }
+
+
+
+    /*-----------
+        Logos
+    -----------*/
+    .logos .swiper
+    {
+        padding: 0;
+    }
+
+
+    .logos .swiper-slide
+    {
+        width: 160px;
+    }
+
+
+    .logos .swiper-button-prev,
+    .logos .swiper-button-next
+    {
+        display: none;
+    }
+
+
+    .logos .image
+    {
+        height: 68px;
+    }
+
+
+
+    /*--------------------
+        Articles block
+    --------------------*/
+    .articles_block .swiper
+    {
+        width: 400px;
+    }
+
+
+    .articles_block .swiper-button-prev
+    {
+        left: -40px;
+    }
+
+    .articles_block .swiper-button-next
+    {
+        right: -40px;
+    }
+
+
+    .articles_block .article .date
+    {
+        top: var(--cont_padding_half);
+        right: var(--cont_padding_half);
+
+        padding: 4px 8px;
+
+        font-size: var(--font_size);
+    }
+
+
+    .articles_block .article .name
+    {
+        font-size: 20px;
+    }
+
+
+    .articles_block .article .desc
+    {
+        width: calc(100% - 60px);
+    }
+
+
+    .articles_block .article .link
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .articles_block .article .link .icon
+    {
+        width: 26px;
+        height: 27px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .add_question
+    {
+        font-size: 18px;
+    }
+
+
+    .FAQ .add_question .btn
+    {
+        padding: 15px calc(var(--cont_padding) - 2px);
+
+        border-radius: 12px;
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head .bg::before
+    {
+        background: linear-gradient(90deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .00) 100%);
+    }
+
+
+    .about_head .btns .btn
+    {
+        padding: 11px calc(var(--cont_padding) - 1px);
+    }
+
+
+
+    /*---------
+        Why
+    --------*/
+    .why .image
+    {
+        width: 100%;
+    }
+
+
+    .why .data
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+        margin-left: 0;
+        padding-inline: var(--cont_padding);
+    }
+
+
+    .why .data:before
+    {
+        top: var(--cont_padding_half);
+        left: var(--cont_padding_half);
+
+        font-size: 68px;
+    }
+
+
+    .why .data:after
+    {
+        right: var(--cont_padding_half);
+        bottom: var(--cont_padding_half);
+
+        font-size: 68px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data
+    {
+        width: 100%;
+    }
+
+
+    .about_info .link a
+    {
+        width: 100%;
+    }
+
+
+    .about_info .boss
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+    }
+
+
+    .about_info .boss .name
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-left: 0;
+    }
+
+
+    .articles .row > *,
+    .articles .row > *.big
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .articles .article .thumb
+    {
+        height: 332px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .title
+    {
+        margin-bottom: var(--cont_padding);
+
+        line-height: calc(100% + 6px);
+    }
+
+
+    .contacts_info .data
+    {
+        position: relative;
+        right: 0;
+
+        width: 100%;
+    }
+
+
+    .contacts_info .map
+    {
+        height: 320px;
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*-------------
+        Request
+    -------------*/
+    .request .data
+    {
+        padding: var(--cont_padding_double) var(--cont_padding);
+    }
+
+
+
+    /*-------------
+        Products
+    -------------*/
+    .products .row
+    {
+        margin-left: 0;
+    }
+
+
+    .products .row > *,
+    .products .row > *.big
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .products .product
+    {
+        min-height: 0;
+    }
+
+
+    .products .product:before
+    {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .products .product .thumb
+    {
+        height: 168px;
+        margin-top: var(--cont_padding_half);
+    }
+
+
+    .products .product .name
+    {
+        font-size: 18px;
+    }
+
+
+    .products .product.big
+    {
+        min-height: 200px;
+        padding-left: 180px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-left: 0;
+    }
+
+
+    .advantages .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .advantages .item
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .advantages .item .icon
+    {
+        height: 44px;
+        margin-bottom: 8px;
+    }
+
+
+    .advantages .item.big .icon
+    {
+        height: 52px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images .big .image
+    {
+        height: 424px;
+    }
+
+
+    .product_info .images .thumbs .image
+    {
+        height: 80px;
+    }
+
+
+
+    .product_info .flavor .vals label
+    {
+        width: calc(16.666% - 8px);
+    }
+
+
+    .product_info .flavor .vals .thumb
+    {
+        height: 68px;
+    }
+
+
+    .product_info .pluses > *
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .product_info .order .btn
+    {
+        padding: 15px;
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data .item
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .product_data .item .head .title
+    {
+        width: calc(100% - 42px);
+
+        font-size: 18px;
+    }
+
+
+
+    /*---------------------
+        Products slider
+    ---------------------*/
+    .products_slider .product .name
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*------------
+        Values
+    ------------*/
+    .values .item .icon
+    {
+        height: 52px;
+    }
+
+
+
+    /*----------------------
+        About production
+    ----------------------*/
+    .about_production .items > *
+    {
+        font-size: 16px;
+    }
+
+
+    .about_production .items .icon
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .about_production .items span
+    {
+        width: calc(100% - 64px);
+    }
+
+
+    .about_production .video .thumb .icon
+    {
+        width: 72px;
+        height: 72px;
+    }
+
+
+    .about_production .video .thumb .icon svg
+    {
+        width: 20px;
+        height: 23px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .row
+    {
+        gap: var(--cont_padding_double) var(--cont_padding);
+    }
+
+
+    .history .row:before
+    {
+        display: none;
+    }
+
+
+    .history .row > *
+    {
+        width: calc(50% - var(--cont_padding_half));
+    }
+
+
+    .history .item .line
+    {
+        display: none;
+    }
+
+
+    .history .item .info
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+
+        white-space: normal;
+    }
+
+
+    .history .item .info > *
+    {
+        width: 100%;
+    }
+
+
+    .history .item .year
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+
+    /*---------------------
+        Contacts block2
+    ---------------------*/
+    .contacts_block .row
+    {
+        margin-left: 0;
+    }
+
+
+    .contacts_block .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .contacts_block .map
+    {
+        height: 360px;
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .item .image
+    {
+        height: 60px;
+    }
+
+
+    .where_buy .item .btn
+    {
+        padding: 8px 16px;
+
+        font-size: 13px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .info
+    {
+        width: 100%;
+        margin-bottom: var(--cont_padding_double);
+    }
+
+
+    footer .menu
+    {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,595 @@
+@media print,
+(max-width: 1023px)
+{
+    /*--------------
+        ButtonUp
+    --------------*/
+    .buttonUp
+    {
+        margin-bottom: var(--cont_padding_half);
+    }
+
+
+    .buttonUp .btn
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs .btn
+    {
+        min-width: 120px;
+    }
+
+
+
+    /*--------------
+        All link
+    --------------*/
+    .all_link a
+    {
+        padding: 16px var(--cont_padding_double);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        right: 100%;
+        left: auto;
+
+        width: 325px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        transition: transform .3s linear;
+
+        background: var(--white_color);
+    }
+
+    header.show
+    {
+        transform: translateX(100%);
+    }
+
+
+    header .scroll
+    {
+        display: flex;
+        overflow: auto;
+        flex-direction: column;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+
+        overscroll-behavior-y: contain;
+    }
+
+
+    header .top
+    {
+        order: 3;
+
+        margin-top: auto;
+    }
+
+
+    header .data
+    {
+        order: 2;
+
+        padding-block: var(--cont_padding);
+    }
+
+
+    header .bottom
+    {
+        padding-block: var(--cont_padding);
+    }
+
+
+    header .sites
+    {
+        width: 100%;
+    }
+
+
+    header .socials
+    {
+        width: 100%;
+        margin-top: var(--cont_padding_half);
+
+        gap: 4px;
+    }
+
+
+    header .socials .items
+    {
+        gap: 8px;
+    }
+
+
+    header .logo
+    {
+        display: none;
+    }
+
+
+    header .search
+    {
+        width: 100%;
+        margin-bottom: var(--cont_padding);
+    }
+
+
+    header .contacts
+    {
+        gap: 8px;
+    }
+
+
+    header .request_btn
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+    }
+
+
+    header .menu
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+
+    header .menu_item
+    {
+        width: 100%;
+    }
+
+
+    header .menu_item > a
+    {
+        justify-content: flex-start;
+
+        min-height: 0;
+
+        font-size: 16px;
+
+        text-align: left;
+    }
+
+
+    header .menu_item > a span
+    {
+        width: calc(100% - 14px);
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h4
+    {
+        font-size: 18px;
+    }
+
+
+    .text_block table th.big
+    {
+        width: 280px;
+    }
+
+
+    .text_block table th.small
+    {
+        width: 80px;
+    }
+
+
+    .text_block table td .row
+    {
+        gap: var(--cont_padding_half);
+    }
+
+
+
+    /*-----------------
+        Main pluses
+    -----------------*/
+    .main_pluses .item
+    {
+        width: 50%;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .category
+    {
+        height: 200px;
+    }
+
+
+    .catalog .category .name
+    {
+        padding-left: 140px;
+    }
+
+
+
+    /*---------------------
+        Main advantages
+    ---------------------*/
+    .main_advantages .grid
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+    /*-----------
+        Logos
+    -----------*/
+    .logos .image
+    {
+        height: 80px;
+    }
+
+
+
+    /*--------------------
+        Articles block
+    --------------------*/
+    .articles_block .swiper
+    {
+        width: 560px;
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*---------
+        Why
+    --------*/
+    .why .image
+    {
+        width: 280px;
+    }
+
+
+    .why .data
+    {
+        width: calc(100% - 140px);
+        margin-left: -140px;
+        padding-inline: calc(140px + var(--cont_padding_double)) var(--cont_padding_double);
+    }
+
+
+    .why .data:before
+    {
+        left: 180px;
+
+        font-size: 80px;
+    }
+
+
+    .why .data:after
+    {
+        font-size: 80px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data
+    {
+        width: calc(100% - 308px);
+    }
+
+
+    .about_info .link a
+    {
+        padding: 16px var(--cont_padding_double);
+    }
+
+
+    .about_info .boss
+    {
+        width: 280px;
+    }
+
+
+    .about_info .boss .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .articles .row > *.big
+    {
+        width: calc(100% - 20px);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        height: 400px;
+    }
+
+
+
+    /*-------------
+        Products
+    -------------*/
+    .products .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+    .products .row > *.big
+    {
+        width: calc(100% - var(--cont_padding));
+    }
+
+
+    .products .product .name
+    {
+        font-size: 20px;
+    }
+
+
+    .products .product.big
+    {
+        padding-left: 224px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        width: 100%;
+        margin-bottom: var(--cont_padding_double);
+    }
+
+
+    .product_info .images .thumbs .image
+    {
+        height: 100px;
+    }
+
+
+
+    .product_info .data
+    {
+        width: 100%;
+    }
+
+
+    .product_info .btns
+    {
+        display: none;
+    }
+
+
+    .product_info .paroduct_name
+    {
+        margin-bottom: var(--cont_padding);
+    }
+
+
+    .product_info .flavor .vals label
+    {
+        width: calc(12.485% - 8px);
+    }
+
+
+    .product_info .pluses > *
+    {
+        padding: 20px;
+
+        font-size: 13px;
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data .item .head .title
+    {
+        width: calc(100% - 48px);
+
+        font-size: 20px;
+    }
+
+
+    .product_data .item .head .icon
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .product_data .item .head .icon svg
+    {
+        width: 22px;
+        height: 21px;
+    }
+
+
+
+    /*------------
+        Values
+    ------------*/
+    .values .item
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .values .item .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*----------------------
+        About production
+    ----------------------*/
+    .about_production .data
+    {
+        width: 100%;
+    }
+
+
+    .about_production .video
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .item .year
+    {
+        font-size: 20px;
+    }
+
+
+    .history .item .info > *
+    {
+        min-width: 0;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .file
+    {
+        min-height: 168px;
+    }
+
+
+    .files .file .btn
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .swiper-button-next,
+    .reviews .swiper-button-prev
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .reviews .swiper-button-next .icon,
+    .reviews .swiper-button-prev .icon
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .links
+    {
+        display: none;
+    }
+}

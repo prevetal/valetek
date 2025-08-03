@@ -1,0 +1,424 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 36px;
+        --font_size_title_big: 48px;
+        --offset: 80px;
+    }
+
+
+
+    /*--------------
+        ButtonUp
+    --------------*/
+    .buttonUp
+    {
+        right: var(--cont_padding);
+
+        margin-bottom: var(--cont_padding);
+    }
+
+
+    .buttonUp .btn
+    {
+        width: 52px;
+        height: 52px;
+    }
+
+
+
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 40px;
+    }
+
+
+    .all_link a
+    {
+        padding: 20px var(--cont_padding_double);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .top,
+    header .data
+    {
+        padding-block: 8px;
+    }
+
+
+    header .search
+    {
+        width: calc(100% - 807px);
+    }
+
+
+    header .contacts .phone
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    header .contacts .email
+    {
+        font-size: var(--font_size);
+        line-height: calc(100% + 4px);
+    }
+
+
+    header .request_btn
+    {
+        padding: calc(var(--cont_padding_half) - 1px) calc(var(--cont_padding) - 1px);
+
+        font-size: var(--font_size);
+        line-height: calc(100% + 4px);
+    }
+
+
+    header .menu_item > a
+    {
+        min-height: 68px;
+
+        font-size: 16px;
+        line-height: calc(100% + 6px);
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_desc
+    {
+        margin-top: calc(var(--cont_padding_half) * -1);
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+
+    .form .nice-select .current
+    {
+        height: 60px;
+        padding-left: 15px;
+    }
+
+
+    .form .submit_btn
+    {
+        padding: 20px var(--cont_padding_double);
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 16px;
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .text_block h3
+    {
+        margin-bottom: var(--cont_padding) !important;
+
+        font-size: 24px;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3
+    {
+        margin-top: 30px;
+    }
+
+
+    .text_block ul
+    {
+        gap: 8px;
+    }
+
+
+    .text_block img
+    {
+        margin-block: 30px;
+    }
+
+
+    .text_block .images
+    {
+        margin-block: 30px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .swiper-button-next,
+    .main_slider .swiper-button-prev
+    {
+        top: auto;
+        bottom: 100px;
+
+        width: 60px;
+        height: 60px;
+
+        border-radius: 16px;
+    }
+
+
+    .main_slider .swiper-button-prev
+    {
+        left: 50%;
+
+        margin-left: calc(var(--content_width) / -2);
+    }
+
+
+    .main_slider .swiper-button-next
+    {
+        right: 50%;
+
+        margin-right: calc(var(--content_width) / -2);
+    }
+
+
+    .main_slider .swiper-button-next .icon,
+    .main_slider .swiper-button-prev .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    /*-----------------
+        Main pluses
+    -----------------*/
+    .main_pluses .item
+    {
+        padding: 20px var(--cont_padding);
+
+        font-size: 16px;
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    .main_pluses .item:before
+    {
+        right: var(--cont_padding);
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .link a
+    {
+        min-width: 0;
+        padding: 20px var(--cont_padding_double);
+    }
+
+
+
+    /*---------------------
+        Products slider
+    ---------------------*/
+    .products_slider .swiper-button-prev
+    {
+        left: -40px;
+    }
+
+    .products_slider .swiper-button-next
+    {
+        right: -40px;
+    }
+
+
+
+    /*-----------
+        Logos
+    -----------*/
+    .logos .swiper
+    {
+        padding-inline: calc(var(--cont_padding_double) * 1.5);
+    }
+
+
+    .logos .swiper-button-prev
+    {
+        left: calc(var(--cont_padding_half) * -1);
+    }
+
+    .logos .swiper-button-next
+    {
+        right: calc(var(--cont_padding_half) * -1);
+    }
+
+
+    .logos .image
+    {
+        height: 100px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .add_question
+    {
+        margin-top: 40px;
+
+        font-size: 20px;
+    }
+
+
+    .FAQ .add_question .btn
+    {
+        margin-top: var(--cont_padding_half);
+        padding: 19px calc(var(--cont_padding) - 2px);
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .swiper
+    {
+        width: 524px;
+    }
+
+
+    .reviews .swiper-button-prev,
+    .reviews .swiper-button-next
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+    .reviews .review
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .reviews .review .text
+    {
+        padding-top: 56px;
+    }
+
+
+    .reviews .review .text:before
+    {
+        font-size: 88px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-block: var(--offset) 60px;
+    }
+
+
+    footer .contacts .phone,
+    footer .contacts .email
+    {
+        font-size: 18px;
+    }
+
+
+    footer .socials
+    {
+        margin-top: 30px;
+
+        gap: 8px;
+    }
+
+
+    footer .menu
+    {
+        font-size: 18px;
+
+        gap: 16px;
+    }
+
+
+    footer .links
+    {
+        gap: 16px;
+    }
+
+
+    footer .links .title
+    {
+        font-size: 18px;
+    }
+
+
+    footer .links .items
+    {
+        line-height: calc(100% + 4px);
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    footer .btns
+    {
+        width: 244px;
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    footer .btns .btn
+    {
+        padding: calc(var(--cont_padding_half) - 1px) calc(var(--cont_padding) - 1px);
+
+        font-size: var(--font_size);
+        line-height: calc(100% + 4px);
+    }
+
+
+    footer .sites
+    {
+        font-size: var(--font_size);
+    }
+}
