@@ -315,26 +315,50 @@
     -----------*/
     .logos .swiper
     {
-        padding: 0;
+        padding: 0 0 50px;
     }
 
 
     .logos .swiper-slide
     {
-        width: 160px;
+        width: 200px;
     }
 
 
     .logos .swiper-button-prev,
     .logos .swiper-button-next
     {
-        display: none;
+        top: auto;
+        bottom: auto;
+
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
     }
 
 
-    .logos .image
+    .logos .swiper-button-prev
     {
-        height: 68px;
+        left: 50%;
+
+        transform: translateX(calc(-100% - 5px));
+    }
+
+    .logos .swiper-button-next
+    {
+        right: 50%;
+
+        transform: translateX(calc(100% + 5px));
+    }
+
+
+    .logos .swiper-button-next .icon,
+    .logos .swiper-button-prev .icon
+    {
+        display: block;
+
+        width: 26px;
+        height: 27px;
     }
 
 

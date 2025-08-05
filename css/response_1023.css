@@ -297,9 +297,15 @@
     /*-----------
         Logos
     -----------*/
+    .logos .swiper
+    {
+        padding-inline: calc(var(--cont_padding_double) * 1.25);
+    }
+
+
     .logos .image
     {
-        height: 80px;
+        height: 100px;
     }
 
 

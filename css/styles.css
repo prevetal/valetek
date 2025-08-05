@@ -2765,6 +2765,17 @@ header .sub_menu a.active
 }
 
 
+.logos .link
+{
+    display: block;
+
+    transition: .2s linear;
+    text-decoration: none;
+
+    color: currentColor;
+    border-radius: 16px;
+}
+
 
 .logos .image
 {
@@ -2775,6 +2786,7 @@ header .sub_menu a.active
     justify-content: center;
 
     height: 138px;
+    padding: 10px;
 }
 
 
@@ -2784,6 +2796,12 @@ header .sub_menu a.active
 
     max-width: 100%;
     max-height: 100%;
+}
+
+
+.logos .link:hover
+{
+    background: var(--primary_color);
 }
 
 
@@ -3383,6 +3401,7 @@ header .sub_menu a.active
 
     font-size: 18px;
 
+    transition: .2s linear;
     text-align: center;
 
     border-radius: 20px;
@@ -3412,6 +3431,13 @@ header .sub_menu a.active
     line-height: 120%;
 
     text-transform: uppercase;
+}
+
+
+.advantages .item:hover
+{
+    color: var(--white_color);
+    background: var(--primary_color);
 }
 
 
