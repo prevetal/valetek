@@ -96,6 +96,27 @@
     }
 
 
+    header .sub_menu
+    {
+        margin-top: -8px;
+    }
+
+
+    header .sub_menu .items
+    {
+        max-height: 112px;
+
+        gap: var(--cont_padding_half);
+    }
+
+
+    header .sub_menu a
+    {
+        font-size: 16px;
+        line-height: calc(100% + 6px);
+    }
+
+
 
     /*---------------
         Page head
@@ -344,6 +365,44 @@
     .reviews .review .text:before
     {
         font-size: 88px;
+    }
+
+
+
+    /*----------------
+        Top banner
+    ----------------*/
+    .top_banner .swiper-button-next,
+    .top_banner .swiper-button-prev
+    {
+        width: 60px;
+        height: 60px;
+
+        border-radius: 16px;
+    }
+
+
+    .top_banner .swiper-button-prev
+    {
+        left: 50%;
+
+        margin-left: calc(var(--content_width) / -2);
+    }
+
+
+    .top_banner .swiper-button-next
+    {
+        right: 50%;
+
+        margin-right: calc(var(--content_width) / -2);
+    }
+
+
+    .top_banner .swiper-button-next .icon,
+    .top_banner .swiper-button-prev .icon
+    {
+        width: 40px;
+        height: 40px;
     }
 
 

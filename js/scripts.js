@@ -111,10 +111,38 @@ document.addEventListener('DOMContentLoaded', function() {
 					spaceBetween: 30
 				}
 			},
+			on: {
+				init: swiper => {
+					swiper.slidePrev(0)
+					swiper.slideNext(0)
+				},
+			}
 		}
 
 		reviewsSliders.push(new Swiper('.reviews_s' + i, options))
 	})
+
+
+	// Top banner slider
+	let topBannerSlider = document.querySelector('.top_banner .swiper')
+
+	if (topBannerSlider) {
+		new Swiper('.top_banner .swiper', {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 1,
+			loopAdditionalSlides: 1,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			lazy: true
+		})
+	}
 
 
 	// Products slider
@@ -203,7 +231,12 @@ document.addEventListener('DOMContentLoaded', function() {
 				}
 			},
 			on: {
-				init: swiper => setHeight(swiper.el.querySelectorAll('.article')),
+				init: swiper => {
+					swiper.slidePrev(0)
+					swiper.slideNext(0)
+
+					setHeight(swiper.el.querySelectorAll('.article'))
+				},
 				resize: swiper => {
 					let items = swiper.el.querySelectorAll('.article')
 

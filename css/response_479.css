@@ -327,6 +327,30 @@
 
 
 
+    .product_info .btns
+    {
+        gap: 5px;
+    }
+
+
+    .product_info .btns .btn
+    {
+        padding: 6px 10px;
+
+        font-size: 12px;
+
+        gap: 4px;
+    }
+
+
+    .product_info .btns .btn .icon
+    {
+        width: 10px;
+        height: 10px;
+    }
+
+
+
     .product_info .flavor .vals label
     {
         width: calc(20% - 8px);

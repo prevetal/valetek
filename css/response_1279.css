@@ -142,6 +142,24 @@
     }
 
 
+    header .sub_menu
+    {
+        width: 260px;
+    }
+
+
+    header .sub_menu .items
+    {
+        max-height: 108px;
+    }
+
+
+    header .sub_menu a
+    {
+        font-size: 15px;
+    }
+
+
 
     /*---------------
         Page head
@@ -1165,6 +1183,45 @@
     {
         width: 480px;
         margin-bottom: var(--cont_padding);
+    }
+
+
+
+    /*----------------
+        Top banner
+    ----------------*/
+    .top_banner .swiper-button-next,
+    .top_banner .swiper-button-prev
+    {
+        width: 48px;
+        height: 48px;
+
+        border-width: 1px;
+        border-radius: 12px;
+    }
+
+
+    .top_banner .swiper-button-prev
+    {
+        left: var(--cont_padding);
+
+        margin-left: 0;
+    }
+
+
+    .top_banner .swiper-button-next
+    {
+        right: var(--cont_padding);
+
+        margin-right: 0;
+    }
+
+
+    .top_banner .swiper-button-next .icon,
+    .top_banner .swiper-button-prev .icon
+    {
+        width: 30px;
+        height: 30px;
     }
 
 
